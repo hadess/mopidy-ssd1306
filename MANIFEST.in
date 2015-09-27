@@ -4,5 +4,6 @@ include LICENSE
 include MANIFEST.in
 include README.rst
 include mopidy_ssd1306/ext.conf
+include mopidy_ssd1306/pf_ronda_seven.ttf
 
 recursive-include tests *.py

@@ -17,6 +17,9 @@ class Extension(ext.Extension):
     ext_name = 'ssd1306'
     version = __version__
 
+    def get_font_path(self):
+        return os.path.join(os.path.dirname(__file__), 'pf_ronda_seven.ttf')
+
     def get_default_config(self):
         conf_file = os.path.join(os.path.dirname(__file__), 'ext.conf')
         return config.read(conf_file)
